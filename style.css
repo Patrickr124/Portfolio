@@ -6,8 +6,35 @@
   background-color: black;
 }
 
+/* styles.css Uso do B.E.M*/
+
+/* Bloco - Cabeçalho */
+.cabecalho {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(9, 9, 155);
+  color: white;
+}
+
+/* Elemento - Autor */
 .autor {
   font-size: 18px;
+}
+
+/* Elemento - Ícones */
+
+.fa-brands,
+.fa-regular {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+/* Modificador - Cabecalho Ativo */
+.cabecalho--ativo {
+  font-size: 25px;
 }
 
 header {
@@ -314,44 +341,38 @@ footer p {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 412px) and (max-width: 767px) {
   .perfil-foto {
     position: relative;
-    right: 490px;
-    bottom: 10px;
+    right: 690px;
+    top: 40px;
   }
 
   .nome {
     position: relative;
-    left: 40px;
-    font-size: 35px;
+    right: 155px;
+    font-size: 20px;
     top: 450px;
     width: 500px;
   }
 
-  .linguagens {
-    position: relative;
-    top: 100px;
-    left: 200px;
-  }
-
   .introducao {
     position: relative;
-    top: 450px;
-    font-size: 17px;
-    left: 60px;
+    top: 500px;
+    font-size: 20px;
+    right: 90px;
   }
 
   .contato {
-    margin-top: 320px;
+    margin-top: 470px;
     font-size: 16px;
-    margin-left: 90px;
+    margin-left: -90px;
   }
 
   .linha1 {
     position: relative;
     width: 300px;
-    left: 90px;
+    left: 80px;
     bottom: 300px;
   }
 
@@ -368,21 +389,23 @@ footer p {
   .experiencia {
     position: relative;
     right: 40px;
+    font-size: 15px;
   }
 
   .experiencia2 {
     position: relative;
     right: 40px;
+    font-size: 15px;
   }
 
   .linha2 {
     position: relative;
     top: -2680px;
     width: 300px;
-    margin-left: 140px;
+    left: 80px;
   }
 
-  .projetos h1 {
+  .projetos h2 {
     font-size: 35px;
   }
 
@@ -403,7 +426,7 @@ footer p {
 
   .mensagem {
     position: relative;
-    left: 350px;
+    left: 160px;
   }
 
   form {
@@ -414,12 +437,12 @@ footer p {
 
   .desafio {
     position: relative;
-    left: 180px;
+    right: 10px;
   }
 
   .rodape {
     position: relative;
     bottom: 70px;
-    left: 180px;
+    left: 10px;
   }
 }
